@@ -82,23 +82,23 @@
                             class="btn text-lg bg-[#894189] hover:bg-[#c22ac2] border-none text-white rounded-full flex items-center justify-center">
                             Life
                             <i class="text-white fa-sharp fa-solid fa-heart-circle-bolt"></i>
-                            <span>0</span>
+                            <span id="current-life">5</span>
                         </button>
                         <button
                             class="btn text-lg bg-[#360490] hover:bg-[#29046e] border-none text-white rounded-full flex items-center justify-center">
                             Score
                             <i class="fa-solid fa-dollar-sign"></i>
-                            <span>0</span>
+                            <span id="current-score">0</span>
                         </button>
                     </div>
                 </div>
         </section>
         <!-- score -->
-        <section class="hidden">
+        <section id="total-score-field" class="hidden">
             <div class="flex items-center flex-col justify-center min-h-screen">
                 <div class="space-y-5 text-white text-center bg-[#FFFFFF33] p-6 rounded-2xl">
-                    <h1 class="text-6xl font-bold">Score : <span>0</span></h1>
-                    <button class="btn bg-white border-none">Play Now</button>
+                    <h1 class="text-6xl font-bold">Score : <span id="final-score">0</span></h1>
+                    <button onclick="play()" class="btn bg-white border-none">Play Now</button>
                     <p>Practice will make you Pro</p>
                 </div>
             </div>
